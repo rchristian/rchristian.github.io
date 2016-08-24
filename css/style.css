@@ -55,7 +55,17 @@ p {
 }
 
 .page-header h1 {
+	font-size: 74px;
 	font-family: "Lora";
+}
+
+.page-header p {
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.btn-primary {
+	margin-right: 10px;
 }
 
 .btn-primary a {
@@ -64,6 +74,7 @@ p {
 
 .btn-default {
 	background: none;
+	margin-left: 10px;
 }
 
 .btn-default a {
