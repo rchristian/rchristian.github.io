@@ -48,3 +48,10 @@ Temporary Items
 
 # Sublime files
 *.sublime*
+
+#Node Modules
+node_modules
+
+#Sass files
+**/.sass-cache
+**/.sass-cache/*
