@@ -1,0 +1,25 @@
+{
+	"name": "rachel-christian-dev-design",
+	"description": "Personal website of the developer",
+	"version": "2.0.0",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": "4.4.3"
+	},
+	"private": true,
+	"author": "Rachel Christian",
+	"dependencies": {
+		"express": "~4.14.0",
+		"morgan": "^1.7.0",
+		"serve-favicon": "^2.3.2"
+	},
+	"devDependencies": {
+	    "browser-sync": "^2.18.7",
+	    "gulp": "^3.9.1",
+	    "gulp-concat": "^2.6.1",
+	    "gulp-nodemon": "^2.2.1",
+	    "gulp-sass": "^3.1.0"
+	}
+}
