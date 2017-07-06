@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav role="nagivation">
             <ol>
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a href="#home" title="Back to the top of the page">Home</a></li>
+                <li><a href="#rachel-christian" title="A little bit about me and my skillset">About</a></li>
+                <li><a href="#work" title="My recent projects">Work</a></li>
+                <li><a href="#contact" title="Get in touch with me">Contact</a></li>
             </ol>
         </nav>
         <h1>
@@ -22,11 +22,11 @@
         I'm a web developer &amp; designer.
       </h1>
     </header>
-    <section>
+    <section id="rachel-christian">
         <h1>
         About Me
       </h1>
-        <img src="assets/img/me.jpg">
+        <img src="assets/img/me.jpg" alt="">
         <p>I'm a web developer and designer from Tennessee. I love creating and and coding my own designs.
         </p>
         <p>I'm experienced in:</p>
@@ -38,11 +38,11 @@
         <p>Looking to expand my skillset, I learned and fell in love with Node, Express, and MongoDB. I use these whenever I can.</p>
         <h2></h2>
     </section>
-    <section>
+    <section id="work">
         <h1>My Work</h1>
         <div>
-            <a href="">
-                <div class="card-img"></div>
+            <a href="https://wikiviewer.herokuapp.com/">
+                <div class="card-img"><img src="" alt=""></div>
                 <div class="card-content">
                     <h2 class="card-title">Wikipedia Viewer</h2>
                     <p class="card-desc">Search and see Wikipedia article. Made with Angular, SCSS, and Node/Express.</p>
@@ -50,8 +50,8 @@
             </a>
         </div>
         <div>
-            <a href="">
-                <div class="card-img"></div>
+            <a href="https://localweatherapp.herokuapp.com/">
+                <div class="card-img"><img src="" alt=""></div>
                 <div class="card-content">
                     <h2 class="card-title">Weather App</h2>
                     <p class="card-desc">See the local weather (based on IP address). Made with Angular, an external API, and Node/Express.</p>
@@ -59,8 +59,8 @@
             </a>
         </div>
         <div>
-            <a href="">
-                <div class="card-img"></div>
+            <a href="https://custompomodoro.herokuapp.com/">
+                <div class="card-img"><img src="" alt=""></div>
                 <div class="card-content">
                     <h2 class="card-title">Pomodoro Timer</h2>
                     <p class="card-desc">The classic timer, with customizable work and break times. Made with JQuery.</p>
@@ -68,8 +68,8 @@
             </a>
         </div>
         <div>
-            <a href="">
-                <div class="card-img"></div>
+            <a href="https://random-quoter.herokuapp.com/">
+                <div class="card-img"><img src="" alt=""></div>
                 <div class="card-content">
                     <h2 class="card-title">Random Quoter</h2>
                     <p class="card-desc">See and tweet randomly generated quotes. Made with Javascript, SCSS, Node/Express, and an external API.</p>
@@ -77,20 +77,20 @@
             </a>
         </div>
     </section>
-    <section>
+    <section id="contact">
         <h1>Contact Me</h1>
         <p>I'm always looking for new opportunnities. If you have any, let me know!</p>
-        <p>racheldchristian@gmail.com</p>
+        <p>hello@rachelchristian.design</p>
         <p>Or find me online.</p>
         <ul>
-            <li>LinkedIn</li>
-            <li>Github</li>
-            <li>Codepen</li>
+            <li><a rel="external" href="https://www.linkedin.com/in/rachel-christian-157894104/">LinkedIn</a></li>
+            <li><a rel="external" href="https://github.com/rchristian">Github</a></li>
+            <li><a rel="external" href="https://codepen.io/r_christian/">Codepen</a></li>
         </ul>
     </section>
     <footer>
         <p>Designed and coded by Rachel.</p>
-        <p>2017</p>
+        <p id="copyright">&copy;2017</p>
     </footer>
 </body>
 
