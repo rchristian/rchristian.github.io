@@ -9,7 +9,7 @@ var reload = browserSync.reload;
 gulp.task('default', ['watch'], function () {
 });
 
-gulp.task('browserSync', ['nodemon'], function() {
+gulp.task('browserSync', function() {
     browserSync.init(null, {
         proxy: "localhost:3000", // local node app address
         port: 5000, // use *different* port than above
@@ -48,7 +48,7 @@ gulp.task('sass', function() {
         }))
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function() {
+gulp.task('watch', ['browserSync', 'nodemon','sass'], function() {
     gulp.watch('assets/scss/*.scss', ['sass']);
     gulp.watch('*.html').on('change', reload);
     gulp.watch('*.js').on('change', reload);
