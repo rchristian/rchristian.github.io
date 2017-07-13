@@ -1,0 +1,14 @@
+$color__background: #ffffff;
+$color__background-work: #F7FBFA;
+$color__text: #050505;
+$color__shadow: #071013;
+$color__emphasis: #8cf939;
+$base__font: "Open Sans",
+"Helvetica",
+"Arial",
+sans-serif,
+$base__font-size: 16;
+
+@function calc-em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
