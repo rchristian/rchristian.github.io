@@ -6,7 +6,7 @@ $color__emphasis: #8cf939;
 $base__font: "Open Sans",
 "Helvetica",
 "Arial",
-sans-serif,
+sans-serif;
 $base__font-size: 16;
 
 @function calc-em($target, $context: $base__font-size) {
