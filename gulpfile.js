@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
+var wait = require('gulp-wait');
 
 var reload = browserSync.reload;
 
@@ -40,7 +41,10 @@ gulp.task('nodemon', function(cb) {
 
 gulp.task('sass', function() {
     return gulp.src('assets/scss/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(wait(500))
+        .pipe(sass({ 
+            includePaths: ['assets/scss'] 
+        }).on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(gulp.dest('assets/css/'))
         .pipe(browserSync.reload({
