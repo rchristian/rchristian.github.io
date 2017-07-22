@@ -10,6 +10,7 @@ header {
 
 body {
   position: relative;
+  height: 100%;
   font-color: #050505;
   padding-top: 100px; }
 
@@ -29,6 +30,9 @@ nav > .container {
   height: 70px; }
   nav > .container ol {
     margin-top: 15px; }
+
+nav li.active a {
+  text-decoration: underline; }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
