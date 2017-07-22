@@ -2,7 +2,8 @@ header {
   position: relative; }
   header h1 {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    padding-bottom: 150px; }
 
 .full-height {
   height: 90vh; }
@@ -10,7 +11,15 @@ header {
 body {
   position: relative;
   font-color: #050505;
-  padding-top: 70px; }
+  margin-top: 100px; }
+
+.row {
+  position: absolute; }
+
+a,
+a:hover,
+a:focus {
+  color: #050505; }
 
 nav,
 .navbar-default {
@@ -24,9 +33,22 @@ nav > .container {
   nav > .container ol {
     margin-top: 15px; }
 
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #ffffff; }
+
 nav.navbar {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
+
+span {
+  color: #8cf939; }
+
+.bio {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+
+.work {
+  background-color: #F7FBFA; }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -46,11 +68,11 @@ nav.navbar {
   nav.shrink {
     min-height: 50px;
     padding-top: 5px;
-    border: none; }
+    border: none;
+    box-shadow: -6px 0 #fff, 6px 0 #fff, 0 3px 6px rgba(0, 0, 0, 0.16); }
     nav.shrink > .container {
       border: none;
-      height: 50px;
-      box-shadow: -6px 0 #fff, 6px 0 #fff, 0 3px 6px rgba(0, 0, 0, 0.16); }
+      height: 50px; }
     nav.shrink ol {
       margin-top: 1px; }
   h1 {

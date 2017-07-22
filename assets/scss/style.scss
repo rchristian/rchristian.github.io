@@ -7,7 +7,17 @@
 body {
     position: relative;
     font-color: $color__text;
-    padding-top: 70px;
+    margin-top: 100px;
+}
+
+.row {
+    position: absolute;
+}
+
+a,
+a:hover,
+a:focus {
+    color: $color__text;
 }
 
 nav,
@@ -16,14 +26,21 @@ nav,
     border: none;
 }
 
-nav>.container{
-	border-top: 1px $color__text solid;
-	border-bottom: 1px $color__text solid;
-	height: 70px;
+nav {
+    >.container {
+        border-top: 1px $color__text solid;
+        border-bottom: 1px $color__text solid;
+        height: 70px;
 
-	ol {
-		margin-top: 15px;
-	}
+        ol {
+            margin-top: 15px;
+        }
+    }
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: $color__background;
 }
 
 nav.navbar {
@@ -31,6 +48,17 @@ nav.navbar {
     transition: all 0.4s ease;
 }
 
+span {
+    color: $color__emphasis;
+}
+
+.bio {
+    @include sec-shadow;
+}
+
+.work {
+    background-color: $color__background-work;
+}
 
 
 
@@ -58,22 +86,24 @@ nav.navbar {
         min-height: 50px;
         padding-top: 5px;
         border: none;
+        @include nav-shadow;
 
         >.container {
-        	border:none;
-        	height: 50px;
-        	@include nav-shadow;
+            border: none;
+            height: 50px;
         }
 
         ol {
-        	margin-top: 1px;
+            margin-top: 1px;
         }
     }
 
     h1 {
-    	font-size: 36px;
+        font-size: 36px;
     }
 }
+
+
 
 
 
@@ -93,6 +123,8 @@ nav.navbar {
 
 
 
+
+
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {}
@@ -103,9 +135,13 @@ nav.navbar {
 
 
 
+
+
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {}
+
+
 
 
 
