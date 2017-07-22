@@ -7,12 +7,22 @@
 body {
     position: relative;
     font-color: $color__text;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
-.row {
-    position: absolute;
-}
+//Retina display emulation
+
+// body {
+//   zoom: 200%;
+//   -moz-transform: scale(2);
+//   -moz-transform-origin: 0 0;
+// }
+
+
+//Delete this probably
+// .row {
+//     position: absolute;
+// }
 
 a,
 a:hover,
@@ -94,7 +104,7 @@ span {
         }
 
         ol {
-            margin-top: 1px;
+            margin-top: 3px;
         }
     }
 

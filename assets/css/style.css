@@ -11,10 +11,7 @@ header {
 body {
   position: relative;
   font-color: #050505;
-  margin-top: 100px; }
-
-.row {
-  position: absolute; }
+  padding-top: 100px; }
 
 a,
 a:hover,
@@ -74,7 +71,7 @@ span {
       border: none;
       height: 50px; }
     nav.shrink ol {
-      margin-top: 1px; }
+      margin-top: 3px; }
   h1 {
     font-size: 36px; } }
 
