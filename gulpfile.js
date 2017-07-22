@@ -55,5 +55,5 @@ gulp.task('sass', function() {
 gulp.task('watch', ['browserSync', 'nodemon','sass'], function() {
     gulp.watch('assets/scss/*.scss', ['sass']);
     gulp.watch('*.html').on('change', reload);
-    gulp.watch('*.js').on('change', reload);
+    gulp.watch('assets/js/*.js').on('change', reload);
 });
