@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
+    if ($(document).scrollTop() > 30) {
         $('nav').addClass('shrink');
     } else {
         $('nav').removeClass('shrink');
