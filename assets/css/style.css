@@ -3,14 +3,13 @@ header {
   header h1 {
     position: absolute;
     bottom: 0;
-    padding-bottom: 150px; }
+    padding-bottom: 200px; }
 
 .full-height {
-  height: 90vh; }
+  min-height: 100vh; }
 
 body {
   position: relative;
-  height: 100%;
   font-color: #050505;
   padding-top: 100px; }
 
@@ -61,6 +60,10 @@ span {
   .contact h1 {
     padding-top: 50px;
     padding-bottom: 50px; }
+  .bio div:last-child,
+  .work div:last-child,
+  .contact div:last-child {
+    padding-bottom: 25px; }
 
 .bio {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -96,7 +99,8 @@ span {
     nav.shrink ol {
       margin-top: 3px; }
   h1 {
-    font-size: 36px; }
+    font-size: 36px;
+    padding-right: 10px; }
   .bio .img {
     padding-bottom: 40px; }
     .bio .img img {

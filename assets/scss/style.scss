@@ -6,7 +6,6 @@
 
 body {
     position: relative;
-    height: 100%;
     font-color: $color__text;
     padding-top: 100px;
 }
@@ -17,6 +16,7 @@ body {
 //   -moz-transform: scale(2);
 //   -moz-transform-origin: 0 0;
 // }
+
 p {
     font-size: 16px;
 }
@@ -77,6 +77,10 @@ span {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    div:last-child {
+       padding-bottom: 25px;
+    }
 }
 
 .bio {
@@ -133,6 +137,7 @@ span {
 
     h1 {
         font-size: 36px;
+        padding-right: 10px;
     }
 
     .bio {
@@ -169,6 +174,7 @@ span {
 
 @media only screen and (min-width: 480px) {
     @include no-collapse;
+
 }
 
 
@@ -184,7 +190,9 @@ span {
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+}
 
 
 
