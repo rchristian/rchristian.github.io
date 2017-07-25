@@ -34,6 +34,10 @@ nav > .container {
   nav > .container ol {
     margin-top: 15px; }
 
+nav li:hover,
+nav li:focus {
+  text-decoration: underline; }
+
 nav li.active a {
   text-decoration: underline; }
 

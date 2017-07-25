@@ -46,6 +46,11 @@ nav {
         }
     }
 
+    li:hover,
+    li:focus {
+        text-decoration: underline;
+    }
+
     li.active a {
         text-decoration: underline;
     }
