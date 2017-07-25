@@ -63,6 +63,10 @@ span {
     color: $color__emphasis;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .bio,
 .work,
 .contact {

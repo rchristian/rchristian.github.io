@@ -47,6 +47,9 @@ nav.navbar {
 span {
   color: #8cf939; }
 
+.active {
+  text-decoration: underline; }
+
 .bio,
 .work,
 .contact {
