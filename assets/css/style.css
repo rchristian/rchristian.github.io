@@ -52,11 +52,23 @@ nav.navbar {
 span {
   color: #8cf939; }
 
+.bio,
+.work,
+.contact {
+  padding-top: 50px; }
+  .bio h1,
+  .work h1,
+  .contact h1 {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
 .bio {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 1; }
 
 .work {
-  background-color: #F7FBFA; }
+  background-color: #F7FBFA;
+  z-index: 0; }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -85,15 +97,12 @@ span {
       margin-top: 3px; }
   h1 {
     font-size: 36px; }
-  .bio {
-    padding-top: 50px; }
-    .bio h1 {
-      padding-top: 50px; }
-    .bio .img {
-      padding-top: 40px;
-      padding-bottom: 40px; }
-      .bio .img img {
-        width: 70%; } }
+  .bio .img {
+    padding-bottom: 40px; }
+    .bio .img img {
+      width: 65%; }
+  .contact .social > div img {
+    width: 50%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
