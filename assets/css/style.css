@@ -33,10 +33,6 @@ nav > .container {
   nav > .container ol {
     margin-top: 15px; }
 
-nav li:hover,
-nav li:focus {
-  text-decoration: underline; }
-
 nav li.active a {
   text-decoration: underline; }
 
@@ -118,4 +114,8 @@ span {
 
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  nav li:hover {
+    text-decoration: underline; } }
+
 /* Large Devices, Wide Screens */

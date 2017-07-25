@@ -44,11 +44,6 @@ nav {
         }
     }
 
-    li:hover,
-    li:focus {
-        text-decoration: underline;
-    }
-
     li.active a {
         text-decoration: underline;
     }
@@ -79,7 +74,7 @@ span {
     }
 
     div:last-child {
-       padding-bottom: 25px;
+        padding-bottom: 25px;
     }
 }
 
@@ -92,6 +87,7 @@ span {
     background-color: $color__background-work;
     z-index: 0;
 }
+
 
 
 
@@ -153,7 +149,7 @@ span {
     .work {}
 
     .contact {
-        .social>div img{
+        .social>div img {
             width: 50%;
         }
     }
@@ -170,12 +166,13 @@ span {
 
 
 
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
     @include no-collapse;
-
 }
+
 
 
 
@@ -190,9 +187,8 @@ span {
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {}
 
-}
 
 
 
@@ -207,7 +203,14 @@ span {
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    nav {
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 
 
 
