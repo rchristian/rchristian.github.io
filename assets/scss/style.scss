@@ -19,6 +19,8 @@ body {
 
 p {
     font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.25;
 }
 
 a,
@@ -71,25 +73,32 @@ span {
 .work,
 .contact {
     padding-top: 50px;
+    padding-bottom: 35px;
 
     h1 {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    div:last-child {
-        padding-bottom: 25px;
+
+}
+
+
+.bio {
+    z-index: 1;
+    position:relative;
+    @include sec-shadow;
+
+
+    .about-info>div {
+        margin-bottom: 20px;
     }
 }
 
-.bio {
-    @include sec-shadow;
-    z-index: 1;
-}
-
 .work {
+    z-index: -1;
+    @include sec-shadow-inset;
     background-color: $color__background-work;
-    z-index: 0;
 }
 
 

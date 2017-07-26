@@ -14,7 +14,9 @@ body {
   padding-top: 100px; }
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.25; }
 
 a,
 a:hover,
@@ -53,24 +55,25 @@ span {
 .bio,
 .work,
 .contact {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 35px; }
   .bio h1,
   .work h1,
   .contact h1 {
     padding-top: 50px;
     padding-bottom: 50px; }
-  .bio div:last-child,
-  .work div:last-child,
-  .contact div:last-child {
-    padding-bottom: 25px; }
 
 .bio {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  z-index: 1; }
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  .bio .about-info > div {
+    margin-bottom: 20px; }
 
 .work {
-  background-color: #F7FBFA;
-  z-index: 0; }
+  z-index: -1;
+  box-shadow: inset 0 -6px 6px -3px rgba(0, 0, 0, 0.16);
+  background-color: #F7FBFA; }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
