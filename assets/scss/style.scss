@@ -171,29 +171,11 @@ span {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
     @include no-collapse;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -205,37 +187,33 @@ span {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+    p {
+        font-size: 20px;
+    }
     nav {
         li:hover {
             text-decoration: underline;
+        }
+    }
+
+    .contact {
+        .social>div img {
+            //width: 40%;
         }
     }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .contact {
+        .social>div img {
+            width: 40%;
+        }
+    }
+}
