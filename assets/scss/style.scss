@@ -103,8 +103,17 @@ span {
     z-index: -1;
     @include sec-shadow-inset;
     background-color: $color__background-work;
+
+    
 }
 
+footer {
+    small>p {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 1.25;
+    }
+}
 
 
 

@@ -77,6 +77,11 @@ span {
   box-shadow: inset 0 -6px 6px -3px rgba(0, 0, 0, 0.16);
   background-color: #F7FBFA; }
 
+footer small > p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 1.25; }
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
