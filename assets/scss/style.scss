@@ -20,7 +20,7 @@ body {
 p {
     font-size: 16px;
     margin-bottom: 20px;
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 a,
@@ -79,19 +79,23 @@ span {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
-
 }
 
 
 .bio {
     z-index: 1;
-    position:relative;
+    position: relative;
     @include sec-shadow;
 
 
-    .about-info>div {
-        margin-bottom: 20px;
+    .about-info {
+        >div {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            padding-bottom: 5px;
+        }
     }
 }
 
@@ -100,6 +104,7 @@ span {
     @include sec-shadow-inset;
     background-color: $color__background-work;
 }
+
 
 
 
@@ -171,6 +176,7 @@ span {
 
 
 
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
@@ -180,9 +186,11 @@ span {
 
 
 
+
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {}
+
 
 
 
@@ -205,6 +213,7 @@ span {
         }
     }
 }
+
 
 
 
