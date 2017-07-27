@@ -74,8 +74,21 @@ span {
 
 .work {
   z-index: -1;
-  box-shadow: inset 0 -6px 6px -3px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 -5px 5px -3px rgba(0, 0, 0, 0.16);
   background-color: #F7FBFA; }
+  .work a:hover,
+  .work a:focus {
+    text-decoration: none; }
+  .work .thumbnail {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+    padding: 0;
+    border: none; }
+    .work .thumbnail .caption {
+      padding: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  .work :last-child {
+    margin-bottom: 20px; }
 
 footer small > p {
   font-size: 12px;
