@@ -72,7 +72,7 @@ span {
 .work,
 .contact {
     padding-top: 50px;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 
     h1 {
         padding-top: 50px;
@@ -101,11 +101,15 @@ span {
 .work {
     z-index: -1;
     @include sec-shadow-inset;
-    background-color: $color__background-work;
+    background-color: $color__background-alt;
 
     a:hover,
     a:focus {
         text-decoration: none;
+    }
+
+    .work-content>div:not(:first-child) {
+        padding-top: 30px;
     }
 
     .thumbnail {
@@ -122,6 +126,18 @@ span {
 
      :last-child {
         margin-bottom: 20px;
+    }
+}
+
+.contact {
+    .email {
+        @include email-border;
+        background-color: $color__background-alt;
+        padding: 20px 0 20px 0;
+    }
+
+    .social {
+        padding-top: 25px;
     }
 }
 

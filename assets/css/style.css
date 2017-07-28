@@ -56,7 +56,7 @@ span {
 .work,
 .contact {
   padding-top: 50px;
-  padding-bottom: 35px; }
+  padding-bottom: 50px; }
   .bio h1,
   .work h1,
   .contact h1 {
@@ -79,6 +79,8 @@ span {
   .work a:hover,
   .work a:focus {
     text-decoration: none; }
+  .work .work-content > div:not(:first-child) {
+    padding-top: 30px; }
   .work .thumbnail {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
     padding: 0;
@@ -89,6 +91,15 @@ span {
       padding-bottom: 15px; }
   .work :last-child {
     margin-bottom: 20px; }
+
+.contact .email {
+  border-top: 1px solid rgba(0, 0, 0, 0.01);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+  background-color: #F7FBFA;
+  padding: 20px 0 20px 0; }
+
+.contact .social {
+  padding-top: 25px; }
 
 footer small > p {
   font-size: 12px;

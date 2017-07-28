@@ -46,6 +46,11 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
 }
 
+@mixin email-border {
+    border-top: 1px solid rgba(0, 0, 0, 0.01);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+}
+
 @mixin transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
