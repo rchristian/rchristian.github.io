@@ -1,7 +1,6 @@
 @import "base";
 @import "mixins";
 
-@include text-bottom;
 @include full-height;
 
 body {
@@ -108,10 +107,6 @@ span {
         text-decoration: none;
     }
 
-    .work-content>div:not(:first-child) {
-        padding-top: 30px;
-    }
-
     .thumbnail {
         @include thumb-shadow;
         padding: 0;
@@ -130,24 +125,40 @@ span {
 }
 
 .contact {
+
+    h1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
     .email {
         @include email-border;
         background-color: $color__background-alt;
         padding: 20px 0 20px 0;
+        margin: 25px 0px 30px 0;
     }
 
     .social {
         padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
-footer {
-    small>p {
-        font-size: 12px;
-        margin-bottom: 10px;
-        line-height: 1.25;
-    }
-}
+
+
+
+
 
 
 
@@ -170,6 +181,7 @@ footer {
 
 @media only screen and (min-width: 320px) {
     @include no-collapse;
+    @include text-bottom-mob;
 
     .navbar-default {
         min-height: 100px;
@@ -208,14 +220,29 @@ footer {
         }
     }
 
-    .work {}
+    .work {
+        .work-content>div:not(:first-child) {
+            padding-top: 30px;
+        }
+    }
 
     .contact {
         .social>div img {
             width: 50%;
         }
     }
+
+    footer {
+        small>p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+    }
 }
+
+
+
 
 
 
@@ -233,9 +260,42 @@ footer {
 
 
 
+
+
+
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    @include text-bottom-tab;
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding-right: 10px;
+    }
+
+    .bio {
+        .img {
+            padding-bottom: 40px;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .contact {
+        .social>div img {
+            width: 20%;
+        }
+    }
+}
+
+
+
 
 
 
@@ -248,15 +308,59 @@ footer {
     p {
         font-size: 20px;
     }
+
     nav {
         li:hover {
             text-decoration: underline;
         }
     }
 
+    .bio {
+        .img {
+            img {
+                width: 30%;
+            }
+        }
+
+        .about-info {
+            padding-bottom: 100px;
+
+            .bio-content {
+                >div {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+
+    .work {
+        .work-content>div {
+            padding-top: 30px;
+        }
+
+        .thumbnail {
+            height: 440px;
+            margin-bottom: 25px;
+        }
+    }
+
     .contact {
+        .email {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
         .social>div img {
-            //width: 40%;
+            margin-top: 30px;
+            width: 30%;
+        }
+    }
+
+    footer {
+        small>p {
+            font-size: 14px;
+            margin-bottom: 14px;
+            line-height: 1.2;
         }
     }
 }
@@ -265,12 +369,46 @@ footer {
 
 
 
+
+
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {
+    .bio,
+    .work,
     .contact {
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .bio {
+        .bio-content {
+            >div {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .work {
+        .work-content>div {
+            margin-top: 20px;
+        }
+    }
+
+    .contact {
+        .container {
+            padding: default;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
         .social>div img {
-            width: 40%;
+            width: 25%;
         }
     }
 }

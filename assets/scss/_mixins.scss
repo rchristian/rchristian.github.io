@@ -16,14 +16,26 @@
     }
 }
 
-@mixin text-bottom {
+@mixin text-bottom-mob {
     header {
         position: relative;
 
         h1 {
             position: absolute;
             bottom: 0;
-            padding-bottom: 200px;
+            padding-bottom: 300px;
+        }
+    }
+}
+
+@mixin text-bottom-tab {
+    header {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 320px;
         }
     }
 }
@@ -47,8 +59,8 @@
 }
 
 @mixin email-border {
-    border-top: 1px solid rgba(0, 0, 0, 0.01);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 @mixin transition($args...) {
