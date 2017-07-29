@@ -1,252 +1,204 @@
 <!DOCTYPE html>
-<html id="home" >
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rachel Christian | Web Development &amp; Design</title>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="nagivation">
+            <div class="container">
+                <ol class="nav nav-justified">
+                    <li><a href="#home" title="Back to the top of the page">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#rachel-christian" title="A little bit about me and my skillset">About</a></li>
+                    <li><a href="#work" title="My recent projects">Work</a></li>
+                    <li><a href="#contact" title="Get in touch with me">Contact</a></li>
+                </ol>
+            </div>
+        </nav>
+        <div class="container full-height">
+            <h1 class="text-left text-bottom">
+                I'm <span class="emphasis">Rachel</span>. <br>
+                I'm a <span class="emphasis">web developer</span> &amp; <span class="emphasis">designer</span>.
+            </h1>
+        </div>
+    </header>
+    <section id="rachel-christian" class="bio full-height">
+        <div class="container">
+            <h1>
+            About Me
+            </h1>
+            <div class="row about-info">
+                <div class="img col-xs-12">
+                    <img class="img-circle img-responsive center-block" src="assets/img/me.jpg" alt="">
+                </div>
+                <div class="bio-content col-xs-12">
+                    <p>I'm a web developer and designer from Tennessee. I love creating and and coding my own designs.
+                    </p>
+                    <p>I'm experienced in:</p>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h2><span>Front-End Development</span></h2>
+                        <p>I code using HTML, SCSS, and Javascript or JQuery. I also use Bootstrap and Angular 1 and have begun using Gulp in my workflow.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h2><span>Web and Graphic Design</span></h2>
+                        <p>I studied graphic design at Austin Peay State University and transfered my love of simple, straightforward designs and beautful typography to web design. My creations are made using the Adobe Creative Suite and Figma.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h2><span>Back-End Development</span></h2>
+                        <p>Looking to expand my skillset, I learned and fell in love with Node, Express, and MongoDB. I use these whenever I can.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h2><span>UX/UI Design</span></h2>
+                        <p>I spent three months as a UX/UI Design intern and learned the importance of friendly and well-designed interfaces. I know that if it's difficult or confusing, it won't be used.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work full-height">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-content row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="https://wikiviewer.herokuapp.com/" target="_blank" rel="external noopener noreferrer">
+                        <div class="thumbnail">
+                            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_200.png 200w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_464.png 464w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_661.png 661w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_816.png 816w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_955.png 955w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_1103.png 1103w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_1230.png 1230w,
+                                assets/img/work/wiki/wiki_psrozq_c_scale,w_1400.png 1400w" src="assets/img/work/wiki/wiki_psrozq_c_scale,w_1400.png" alt="">
+                            <div class="caption">
+                                <h2 class="card-title">Wikipedia Viewer</h2>
+                                <p class="card-desc">Search and see Wikipedia article. Made with Angular, SCSS, and Node/Express.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="https://localweatherapp.herokuapp.com/" target="_blank" rel="external noopener noreferrer">
+                        <div class="thumbnail">
+                            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                                assets/img/work/weather/weather_tamc7u_c_scale,w_200.png 200w,
+                                assets/img/work/weather/weather_tamc7u_c_scale,w_823.png 823w,
+                                assets/img/work/weather/weather_tamc7u_c_scale,w_1227.png 1227w,
+                                assets/img/work/weather/weather_tamc7u_c_scale,w_1400.png 1400w" src="assets/img/work/weather/weather_tamc7u_c_scale,w_1400.png" alt="">
+                            <div class="caption">
+                                <h2 class="card-title">Weather App</h2>
+                                <p class="card-desc">See the local weather (based on IP address). Made with Angular, an external API, and Node/Express.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" target="_blank" rel="external noopener noreferrer">
+                    <a href="https://custompomodoro.herokuapp.com/">
+                        <div class="thumbnail">
+                            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                                assets/img/work/pomo/pomo_wmbgmq_c_scale,w_200.png 200w,
+                                assets/img/work/pomo/pomo_wmbgmq_c_scale,w_1061.png 1061w,
+                                assets/img/work/pomo/pomo_wmbgmq_c_scale,w_1400.png 1400w" src="assets/work/pomo/pomo_wmbgmq_c_scale,w_1400.png" alt="">
+                            <div class="caption">
+                                <h2 class="card-title">Pomodoro Timer</h2>
+                                <p class="card-desc">The classic timer, with customizable work and break times. Made with JQuery.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" target="_blank" rel="external noopener noreferrer">
+                    <a href="https://random-quoter.herokuapp.com/">
+                        <div class="thumbnail">
+                            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                                assets/img/work/quote/quote_hgkvt1_c_scale,w_200.png 200w,
+                                assets/img/work/quote/quote_hgkvt1_c_scale,w_698.png 698w,
+                                assets/img/work/quote/quote_hgkvt1_c_scale,w_1107.png 1107w,
+                                assets/img/work/quote/quote_hgkvt1_c_scale,w_1400.png 1400w" src="assets/img/work/quote/quote_hgkvt1_c_scale,w_1400.png" alt="">
+                            <div class="caption">
+                                <h2 class="card-title">Random Quoter</h2>
+                                <p class="card-desc">See and tweet randomly generated quotes. Made with Javascript, SCSS, Node/Express, and an external API.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact full-height">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="contact-content text-center">
+                <p>I'm always looking for new opportunnities. If you have any, let me know!</p>
+                <p class="email"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;
+                    <!-- Enkoder script http://hivelogic.com/enkoder/ -->
+                    <script type="text/javascript">
+                    //<![CDATA[
+                    <!--
+                    var x = "function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+                        "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+                        " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!94{)rt{y+xx=l;=+;" +
+                        "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+                        "\"(8),7\\\"\\\\33\\\\0/\\\\4%%>6{y$|qvg?vn~yg77\\\\1b\\\\axkkmcbgAp2o02\\\\" +
+                        "\\\\21\\\\01\\\\03\\\\\\\\23\\\\0D\\\\$[22\\\\03\\\\03\\\\\\\\0U03\\\\\\\\3" +
+                        "2\\\\03\\\\02\\\\\\\\34\\\\05\\\\02\\\\\\\\1O00\\\\\\\\31\\\\0L\\\\00\\\\07" +
+                        "\\\\17\\\\\\\\vr:Z+Kxp{g0eR-kcybllh)mdqwrh26\\\\06\\\\03\\\\\\\\20\\\\06\\\\" +
+                        "03\\\\\\\\22\\\\02\\\\03\\\\\\\\31\\\\05\\\\00\\\\\\\\2603\\\\\\\\30\\\\07\\" +
+                        "\\03\\\\\\\\27\\\\01\\\\03\\\\\\\\0J00\\\\\\\\32\\\\01\\\\00\\\\\\\\05\\\\0" +
+                        "n\\\\\\\\\\\\07\\\\0K\\\\Z400\\\\00\\\\00\\\\\\\\26\\\\03\\\\01\\\\\\\\0B00" +
+                        "\\\\\\\\\\\\\\\\\\\\\\\\v}03.>*0x :!?63$* \\\"\\\\f(;} ornture;}))++(y)^(iA" +
+                        "tdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%i;+=)y78==(iif){++;i<l;i=0(ior;fth" +
+                        "nglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")";
+                    while (x = eval(x));
+                    //-->
+                    //]]>
+                    </script>
+                    <!-- End Enkoder script -->
+                    <noscript>
+                        hello@rachelchristian.design
+                    </noscript>
+                </p>
+                <p>Or find me online.</p>
+                <div class="row social">
+                    <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                <a rel="external noopener noreferrer" href="https://www.linkedin.com/in/rachel-christian-157894104/" target="_blank"><img class="center-block img-responsive" src="assets/img/social/linkedin.svg" alt="LinkedIn"></a>
+                            </div>
+                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                <a rel="external noopener noreferrer" href="https://github.com/rchristian" target="_blank"><img class="center-block img-responsive" src="assets/img/social/github.svg" alt="Github"></a>
+                            </div>
+                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                <a rel="external noopener noreferrer" href="https://codepen.io/r_christian/" target="_blank"><img class="center-block img-responsive" src="assets/img/social/codepen.svg" alt="CodePen"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <small class="text-center"><p>Designed and coded by Rachel.</p>
+        <p id="copyright">&copy;2017</p></small>
+    </footer>
+    <!-- Latest minified JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest Srollspy
+    <script src="https://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js" crossorigin="anonymous"></script> -->
+    <!-- Custom Javascript -->
+    <script src="assets/js/script.js"></script>
+</body>
 
-  <body>
-    <!--BEGIN NAVBAR-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    	<div class="container-fluid">
-    		<div class="navbar-header">
-	    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<!--BRANDING-->
-				<div id="logo" class="navbar-brand"><a href="#home">Rachel Christian Design</a></div>
-			</div>
-			<!--NAV LINKS-->
-			<div class="collapse navbar-collapse" id="nav-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div><!--end fluid container-->
-	</nav>
-	<!--END NAVBAR-->
-
-
-	<!--PAGE HERO-->
-	<header class="special jumbotron">
-		<div class="container">
-			<div class="page-header text-center">
-				<h1>Hi, I'm Rachel!</h1>
-				<p>I want to make the web beautiful.</p>
-
-				<button type="button" class="btn btn-primary btn-lg"><a href="#contact">Get in touch</a></button>
-				<button type="button" class="btn btn-default btn-lg"><a href="#projects">See my work</a></button>
-
-			</div>
-		</div><!--end container-->
-	</header>
-	<!--END HERO-->
-
-
-	<!--ABOUT-->
-	<section id="about">
-		<div class="container">
-			<h2>About the Designer</h2>
-			<div class="row">
-				<div class="col-md-4 col-sm-6 hidden-xs">
-					<img id="me" class="img-responsive" alt="photo of the designer" src="https://lh3.googleusercontent.com/-7keYQhdbFLw/VlD6NK_47_I/AAAAAAAAAfA/bFpJBIGyMB8/s300-Ic42/7800833%252520-%252520Copy.jpg">
-				</div>
-
-				<div id="bio" class="col-md-8 col-sm-6 col-xs-12">
-					<p>I'm a self-taught web designer and developer with a love of clean, minimal designs and typography. I'd love to work with you to create the well-designed and modern web site you want.</p>
-					<p>Skills:
-						<br/>
-						<ul>
-							<li>HTML &amp; CSS</li>
-							<li>Bootstrap</li>
-							<li>Javascript &amp; JQuery</li>
-							<li>AngularJS 1.x</li>
-							<li>Responsive Design</li>
-							<li>Photoshop</li>
-						</ul>
-					</p>
-				</div><!--end bio-->
-			</div><!--end row-->
-		</div><!--end container-->
-	</section>
-	<!--END ABOUT-->
-
-
-	<!--PROJECTS-->
-	<section id="projects">
-		<div class="container">
-			<h2>Recent Projects</h2>
-			<!--BEGIN ROW-->
-			<div class="row">
-				<!--PROJECT 1-->
-				<div id="project1" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="http://codepen.io/r_christian/full/YyMbwO/" target="_blank">
-							<img class="imgResponsive" alt="Random Quote Machine" src="https://lh3.googleusercontent.com/-oa2gnWpPwC0/VmXaDI-4gkI/AAAAAAAAAhw/1JSkS9mwhfY/s300-Ic42/CodePen---Random-Quote-Machine.jpg">
-							<div class="overlay">
-								<p class="projDesc">Random Quote Machine</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 2-->
-				<div id="project2" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="https://custompomodoro.herokuapp.com/" target="_blank">
-							<img alt="Pomodoro Clock" src="https://lh3.googleusercontent.com/-jmVgtqaOJ_Q/VmXaDP3iwzI/AAAAAAAAAhw/K8JBdWuDP-Y/s300-Ic42/CodePen---Pomodoro-Clock.jpg">
-							<div class="overlay">
-								<p class="projDesc">Pomodoro Clock</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 3-->
-				<div id="project3" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="http://codepen.io/r_christian/full/gPMawb/" target="_blank">
-							<img alt="In-browser calculator" src="https://lh5.googleusercontent.com/ed70X0RAReNGs8fTa-nadRDL-l4myMn-PDUS-RcvxopquxM402xA92eK1uGPm1CE_AQXaPvNy8bd2zDXYX5-P9c7OE11yTm6FL-50xyL5x2DDKEleM2Ggll1-knRFQ_r_K3bHh6wIs5zrGx5d_G_mpyHGDxCG9auzvmjLFGjc4Yg1c4N8isKn8HKdPbDZliqnfFPc2-n0udv1o-XY0zoJk4x2igySH01TFw1rbkz6rvJ2jjzlRgOQIk6Ml8AWsQEVHOOBkCoomXSHI0AJDYhFA9DhQOImjE9A0MLe0zWlFv0GQqqRjY_fB40HWAsAffSJYnvspS95TSNVYor_U7GylPpOxUJ6mblOyNM9RgJVf1cMrPonK4cZ9wVBm81QzUFKbl-Yc9S95MoXOYmO_FjaLxIlZqszSJn7urkxwK7rlEDo0nLOacqM_dE0PNjZk3mUQfZj5-zOUAQnQQG6Fd4_8HX0QYJie79bLwygeitk4WZG0oHneLn4EEPedxPPC5c3qqCeYQp-pNa6HzEZHKVwO_LynrS=s300">
-							<div class="overlay">
-								<p class="projDesc">In-Browser Calculator</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 4-->
-				<div id="project4" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="http://s.codepen.io/r_christian/full/adMYZp" target="_blank">
-							<img alt="Van Gogh Tribute Page" src="https://lh3.googleusercontent.com/Fr7nhP8f6r1msWFSIpk-jYWY0A5_1lIH_SQ18HiB5mnYS4P2NIrKJMP9Xk7WYjO-dwLfcF_BP8MtW5Np72VlCjEt6MvlZYgFAR-ACHxajdCvnjCnac2VQnnSrsInVxOIW8_wFEXN1vKZNBriQzFKxTUK2m9uPudX8iM6XFqrfy8Z2DWABiRVMZ7c8fUezp9f5vScHNxygAEOSTMPMxnHs8pWh-6H86SAykhN0GhPGIt2DdmqCGl3LtujVdvNI7-VpMB8l93qgrW-Olu33wOL27w780kYfWTg_FC8VNGX7SnkP3NpkO719VBCiceBwZARRKb4uwPWSmlo8b8hNPa3puVp3Mm2vko2StZyJWc962aznEyZHgH2ZTbLLUjn4GdU7KibAL2hbfsQ5JM5blZCploNXq5AhDwQPmtLY9nGJxPz2dczHxdfPKbp9JVBNXC_YN0IOi2DKONWoV97oKK_ySPOhRsGjMHv_GtRT5DkMr2INqLXUng0nankNWGqNbeYWAS6PyGhfFF7v2wUygUcS8OX4U6yN8MVqE-FRZj5MzfARSjct3qhFvKF3gjwKFQ0c4BYJaTAvLR0JLMh_kunyfOq-qDBKLs=w300-h200-no">
-							<div class="overlay">
-								<p class="projDesc">Van Gogh Tribute Page</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 5-->
-				<div id="project5" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="https://localweatherapp.herokuapp.com/">
-							<img alt="Local Weather App" src="https://lh3.googleusercontent.com/_1yqfbGW10eKXGvSwQMyFKYt4D6TtK7Gqitlsyo1-g3hE24PHERJHzDuIoIM7I6JahCif0nl2WL5YnWL9MNC3mztC3tQDkW5SdG1kdWgycsRNLbS-gpuoAZ7CwWP3ZCD6ewHs8kwoxcaInBUJOYz3SMyKk97sQeDQgqQFM7zjkizas72Z93O_XnzmlzjfgBVAndYM3f9KBxRGI2cQ4ggbYtKpYbAEly2t2hLIVRXKc160WEGeqmklm6QoLkhSkkM5pkmz0H34mV2kzjUDErhkPuvdSUcXR2hnO4d3h-BLuo4ESy97shO956OIemyUzxM_I4UFiGPHMZEtP2wgfDaUowRAYNUPqCKbobkOGStYgcv58tstIXpTdC3MV8mhZKecLmqTLx0OnLGOLbBxVMkAtcuIZWU5Tn1BGnoNqiuef8s3K34CG4qR_nMxcToQJZyNNLujuUMivd74FqQhQWPBcalKHzoIk5jGzADfq4I84BXr9OCOxGVvVMNzFQDkrurl8YN8XxyPt2HY-6x_dXJDOZFs6sYrlDovrnrmrbfDB12d4VNmSSCBj2wjGYXSQiaIkwtLEhz0XPeHMsbC9o416BiTTKWgfIzYkuwdDnLvVb-9WHI=w300-h200-no">
-							<div class="overlay">
-								<p class="projDesc">Local Weather App</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 6-->
-				<div id="project6" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="#">
-							<img alt="project 6" src="http://placehold.it/300x200">
-							<div class="overlay">
-								<p class="projDesc">Project 6</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 7-->
-				<div id="project7" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="#">
-							<img alt="project 7" src="http://placehold.it/300x200">
-							<div class="overlay">
-								<p class="projDesc">Project 6</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 8-->
-				<div id="project8" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="#">
-							<img alt="project 8" src="http://placehold.it/300x200">
-							<div class="overlay">
-								<p class="projDesc">Project 6</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--PROJECT 9-->
-				<div id="project9" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-					<div class="hoverEffect">
-						<a href="#">
-							<img alt="project 9" src="http://placehold.it/300x200">
-							<div class="overlay">
-								<p class="projDesc">Project 6</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div><!--END ROW-->
-		</div><!--end project container-->
-	</section>
-	<!--END PROJECTS-->
-
-
-	<!--CONTACT INFO-->
-	<section id="contact">
-		<div class="container">
-			<h2>Let's Connect</h2>
-			<div class="row">
-				<div id="email" class="col-sm-6">
-					<p>You can email me at:</p>
-					<p>
-						<a href="mailto:racheldchristian@gmail.com" target="_top">
-							racheldchristian&#64;gmail.com
-						</a>
-					</p>
-				</div>
-
-				<div id="social" class="col-sm-6">
-					<div class="row">
-						<a class="col-sm-6 col-md-3 col-xs-3" 
-							href="https:/www.twitter.com/rache1christian" target="_blank">
-
-							<img alt="Twitter" src="https://lh3.googleusercontent.com/-KrKQ6uvTMTI/Vk-WSLIYFWI/AAAAAAAAAeM/zkD0lHmRuJ8/s128-Ic42/1448077548_43-twitter.png">
-						</a>
-						<a class="col-sm-6 col-md-3 col-xs-3" 
-							href="https://plus.google.com/104043002265407154525" target="_blank">
-
-							<img alt="Google+" src="https://lh3.googleusercontent.com/-0Nx2Yz5P80w/Vk-WSI0jk7I/AAAAAAAAAeM/LcV3b2OIVNQ/s128-Ic42/1448077583_80-google-plus.png">
-						</a>
-						<a class="col-sm-6 col-md-3 col-xs-3" 
-							href="https://github.com/rchristian" target="_blank">
-
-							<img alt="GitHub" src="https://lh3.googleusercontent.com/-X3QQIcSahmU/Vk-WSIAxnPI/AAAAAAAAAd8/plGNLssrB1w/s128-Ic42/1448077651_github_rounded.png">
-						</a>
-						<a class="col-sm-6 col-md-3 col-xs-3" 
-							href="https://www.linkedin.com/in/rachel-christian-157894104" target="_blank">
-
-							<img alt="LinkedIn" src="https://lh3.googleusercontent.com/-L9OcGxoM6d4/Vk-WSLUFmXI/AAAAAAAAAd8/14DpfIVsvwo/s128-Ic42/1448077615_51-linkedin.png">
-						</a>
-					</div>
-				</div>
-			</div><!--END ROW-->
-		</div><!--END CONTAINER-->
-	</section>
-	<!--END CONTACT-->
-
-
-	<!--FOOTER-->
-	<footer>
-		<div class="container text-center">
-			<p class="text-muted">&copy; 2015</p>
-		</div>
-	</footer>
-	<!--END FOOTER-->
-
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-  </body>
 </html>
