@@ -1,0 +1,80 @@
+@mixin no-collapse {
+    .nav-justified {
+        >li {
+            display: table-cell;
+            width: 1%;
+        }
+        >a {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@mixin full-height {
+    .full-height {
+        min-height: 100vh;
+    }
+}
+
+@mixin text-bottom-mob {
+    header {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 300px;
+        }
+    }
+}
+
+@mixin text-bottom-tab {
+    header {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 320px;
+        }
+    }
+}
+
+@mixin nav-shadow {
+    box-shadow: -6px 0 #fff,
+    6px 0 #fff,
+    0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+@mixin sec-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+@mixin sec-shadow-inset {
+    box-shadow: inset 0 -5px 5px -3px rgba(0, 0, 0, 0.16);
+}
+
+@mixin thumb-shadow {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+@mixin email-border {
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}

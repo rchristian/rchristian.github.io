@@ -1,0 +1,414 @@
+@import "base";
+@import "mixins";
+
+@include full-height;
+
+body {
+    position: relative;
+    font-color: $color__text;
+    padding-top: 100px;
+}
+
+//Retina display emulation
+// body {
+//   zoom: 200%;
+//   -moz-transform: scale(2);
+//   -moz-transform-origin: 0 0;
+// }
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+a,
+a:hover,
+a:focus {
+    color: $color__text;
+}
+
+nav,
+.navbar-default {
+    background-color: $color__background;
+    border: none;
+}
+
+nav {
+    >.container {
+        border-top: 1px $color__text solid;
+        border-bottom: 1px $color__text solid;
+        height: 70px;
+
+        ol {
+            margin-top: 15px;
+        }
+    }
+
+    li.active a {
+        text-decoration: underline;
+    }
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: $color__background;
+}
+
+nav.navbar {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+span {
+    color: $color__emphasis;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.bio,
+.work,
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+.bio {
+    z-index: 1;
+    position: relative;
+    @include sec-shadow;
+
+
+    .about-info {
+        >div {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.work {
+    z-index: -1;
+    @include sec-shadow-inset;
+    background-color: $color__background-alt;
+
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+
+    .thumbnail {
+        @include thumb-shadow;
+        padding: 0;
+        border: none;
+
+        .caption {
+            padding: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+     :last-child {
+        margin-bottom: 20px;
+    }
+}
+
+.contact {
+
+    h1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .email {
+        @include email-border;
+        background-color: $color__background-alt;
+        padding: 20px 0 20px 0;
+        margin: 25px 0px 30px 0;
+    }
+
+    .social {
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    @include no-collapse;
+    @include text-bottom-mob;
+
+    .navbar-default {
+        min-height: 100px;
+        font-size: calc-em(18);
+        padding-top: 25px;
+    }
+
+    nav.shrink {
+        min-height: 50px;
+        padding-top: 5px;
+        border: none;
+        @include nav-shadow;
+
+        >.container {
+            border: none;
+            height: 50px;
+        }
+
+        ol {
+            margin-top: 3px;
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-right: 10px;
+    }
+
+    .bio {
+        .img {
+            padding-bottom: 40px;
+
+            img {
+                width: 65%;
+            }
+        }
+    }
+
+    .work {
+        .work-content>div:not(:first-child) {
+            padding-top: 30px;
+        }
+    }
+
+    .contact {
+        .social>div img {
+            width: 50%;
+        }
+    }
+
+    footer {
+        small>p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    @include no-collapse;
+}
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    @include text-bottom-tab;
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding-right: 10px;
+    }
+
+    .bio {
+        .img {
+            padding-bottom: 40px;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .contact {
+        .social>div img {
+            width: 20%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    p {
+        font-size: 20px;
+    }
+
+    nav {
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .bio {
+        .img {
+            img {
+                width: 30%;
+            }
+        }
+
+        .about-info {
+            padding-bottom: 100px;
+
+            .bio-content {
+                >div {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+
+    .work {
+        .work-content>div {
+            padding-top: 30px;
+        }
+
+        .thumbnail {
+            height: 440px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .contact {
+        .email {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .social>div img {
+            margin-top: 30px;
+            width: 30%;
+        }
+    }
+
+    footer {
+        small>p {
+            font-size: 14px;
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .bio,
+    .work,
+    .contact {
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .bio {
+        .bio-content {
+            >div {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .work {
+        .work-content>div {
+            margin-top: 20px;
+        }
+    }
+
+    .contact {
+        .container {
+            padding: default;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .social>div img {
+            width: 25%;
+        }
+    }
+}
