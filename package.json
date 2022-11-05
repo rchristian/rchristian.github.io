@@ -3,7 +3,7 @@
 	"description": "Personal website of the developer",
 	"version": "2.0.0",
 	"scripts": {
-		"start": "node server.js"
+		"start": "gulp"
 	},
 	"engines": {
 		"node": "^6.11.1"
